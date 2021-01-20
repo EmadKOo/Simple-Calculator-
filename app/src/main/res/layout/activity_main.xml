@@ -1,53 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/resultTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Result = 25"
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/black"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:layout_margin="16dp"
-        android:visibility="invisible"/>
+    <data>
 
-    <EditText
-        android:id="@+id/inputET"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Please enter the second operand"
-        android:background="@drawable/smoothed_border"
-        android:layout_below="@+id/resultTV"
-        android:inputType="number"
-        android:layout_centerHorizontal="true"
-        android:padding="10dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    </data>
 
-    <include
-        android:id="@+id/includedOperandsLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        layout="@layout/operands_layout"
-        android:layout_below="@id/inputET"
-        android:layout_centerHorizontal="true"/>
-
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/includedOperandsLayout"
-        android:background="@color/black"
-        >
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/historyRecyclerView"
+        tools:context=".ui.MainActivity">
+
+        <TextView
+            android:id="@+id/resultTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result = 25"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_margin="16dp"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/inputET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Please enter the second operand"
+            android:background="@drawable/smoothed_border"
+            android:layout_below="@+id/resultTV"
+            android:inputType="number"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <include
+            android:id="@+id/includedOperandsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/operands_layout"
+            android:layout_below="@id/inputET"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="match_parent"
+            android:layout_below="@id/includedOperandsLayout"
+            android:background="@color/black">
 
-    </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/historyRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-</RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>
