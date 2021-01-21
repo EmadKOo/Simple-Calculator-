@@ -15,6 +15,7 @@ class Calculator{
         }
 
         fun divide(firstOp: Double, secondOp: Double):Double{
+            if (secondOp==0.0) return 0.0
             return firstOp / secondOp
         }
 

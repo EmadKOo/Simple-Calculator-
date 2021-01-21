@@ -1,0 +1,89 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>HistoryAdapter - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">thirdwayv.calculator.ui</a>&nbsp;/&nbsp;<a href="./index.html">HistoryAdapter</a><br/>
+<br/>
+<h1>HistoryAdapter</h1>
+<code><span class="keyword">class </span><span class="identifier">HistoryAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Adapter</span><span class="symbol">&lt;</span><a href="-my-view-holder/index.html"><span class="identifier">MyViewHolder</span></a><span class="symbol">&gt;</span></code>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-my-view-holder/index.html">MyViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">MyViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">HistoryAdapter</span><span class="symbol">(</span><span class="identifier" id="thirdwayv.calculator.ui.HistoryAdapter$<init>(kotlin.collections.MutableList((thirdwayv.calculator.pojo.Operation)), thirdwayv.calculator.ui.IMain)/operations">operations</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="../../thirdwayv.calculator.pojo/-operation/index.html"><span class="identifier">Operation</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="thirdwayv.calculator.ui.HistoryAdapter$<init>(kotlin.collections.MutableList((thirdwayv.calculator.pojo.Operation)), thirdwayv.calculator.ui.IMain)/iMain">iMain</span><span class="symbol">:</span>&nbsp;<a href="../-i-main/index.html"><span class="identifier">IMain</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="i-main.html">iMain</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">iMain</span><span class="symbol">: </span><a href="../-i-main/index.html"><span class="identifier">IMain</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="operations.html">operations</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">operations</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="../../thirdwayv.calculator.pojo/-operation/index.html"><span class="identifier">Operation</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-item-count.html">getItemCount</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getItemCount</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-bind-view-holder.html">onBindViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onBindViewHolder</span><span class="symbol">(</span><span class="identifier" id="thirdwayv.calculator.ui.HistoryAdapter$onBindViewHolder(thirdwayv.calculator.ui.HistoryAdapter.MyViewHolder, kotlin.Int)/holder">holder</span><span class="symbol">:</span>&nbsp;<a href="-my-view-holder/index.html"><span class="identifier">MyViewHolder</span></a><span class="symbol">, </span><span class="identifier" id="thirdwayv.calculator.ui.HistoryAdapter$onBindViewHolder(thirdwayv.calculator.ui.HistoryAdapter.MyViewHolder, kotlin.Int)/position">position</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-create-view-holder.html">onCreateViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreateViewHolder</span><span class="symbol">(</span><span class="identifier" id="thirdwayv.calculator.ui.HistoryAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/parent">parent</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">, </span><span class="identifier" id="thirdwayv.calculator.ui.HistoryAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/viewType">viewType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-my-view-holder/index.html"><span class="identifier">MyViewHolder</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="remove-at.html">removeAt</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">removeAt</span><span class="symbol">(</span><span class="identifier" id="thirdwayv.calculator.ui.HistoryAdapter$removeAt(kotlin.Int)/position">position</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

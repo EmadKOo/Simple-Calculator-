@@ -16,11 +16,14 @@
             android:id="@+id/resultTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Result = 25"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/black"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Result = 25"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:layout_margin="16dp"
+            android:textColor="@color/black"
             android:visibility="invisible" />
 
         <EditText
@@ -37,7 +40,7 @@
 
         <include
             android:id="@+id/includedOperandsLayout"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             layout="@layout/operands_layout"
             android:layout_below="@id/inputET"

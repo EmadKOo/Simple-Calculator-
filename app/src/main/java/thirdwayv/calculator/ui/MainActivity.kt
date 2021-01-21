@@ -13,7 +13,6 @@ import thirdwayv.calculator.utils.Calculator
 
 class MainActivity : AppCompatActivity() ,IMain{
     private lateinit var mainBinding: ActivityMainBinding
-    private val calculator: Calculator = Calculator()
     private var firstOperand: Double = 0.0
     private var secondOperand: Double = 0.0
     private  var operatorChar: Char = ' '
@@ -21,6 +20,7 @@ class MainActivity : AppCompatActivity() ,IMain{
     private var undoList = arrayListOf<Operation>()
     private lateinit var historyAdapter: HistoryAdapter
     private val TAG = "MainActivity"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -94,6 +94,7 @@ class MainActivity : AppCompatActivity() ,IMain{
         }else if (operatorChar.toString().equals("/")){
             firstOperand = Calculator.divide(firstOperand, secondOperand)
             if(!isRemove) {operationList.add(0, Operation('/', secondOperand))}
+            if(secondOperand==0.0) Toast.makeText(this,"You can`t divide by 0", Toast.LENGTH_LONG).show()
         }
         equalClicked()
     }

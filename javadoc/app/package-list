@@ -1,0 +1,6 @@
+$dokka.format:html
+$dokka.linkExtension:html
+
+thirdwayv.calculator.pojo
+thirdwayv.calculator.ui
+thirdwayv.calculator.utils
